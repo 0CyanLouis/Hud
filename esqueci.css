@@ -1,0 +1,30 @@
+.container {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    background-color: lightgrey;
+    border: 10px solid #cc121f;
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+    
+    }
+ .inside { position: absolute;
+
+        text-align: center;
+        left: 10%;
+        top: 1%;
+        padding-right: 40px;
+        padding-left: 10px;
+        padding-top: 30px;
+    }
+    .caixa { text-align: center;
+        width:260px;
+       height: 20px;
+       margin:10px;
+
+      }
+.butt1{
+    width:270px;
+    height: 30px;
+}
