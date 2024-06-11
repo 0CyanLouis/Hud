@@ -1,0 +1,276 @@
+:root {
+  --background-image: linear-gradient(900deg, rgba(255, 255, 255, 0.897), rgba(175, 21, 21, 0.774));
+  --background-color: #eb1423;
+
+}
+
+.h2 {
+  position: absolute;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  color: rgb(39, 39, 39);
+}
+
+body {
+
+  min-height: 100vh;
+  background-image: url(assets/unialfa.webp);
+  background-size: cover;
+  backdrop-filter: grayscale(80%);
+}
+
+header{
+  background-color: #504f4f9c;
+  border-bottom:4px solid #eb1423;
+ 
+}
+
+.logo{
+  width: 120px;
+}
+.checkbox {
+  display: none;
+
+}
+
+.container {
+
+  /* como alinhar uma div no centro da pagina:(METODO 1)
+  position: absolute;
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  */
+  /* como alinhar uma div no centro da pagina:(METODO 2)
+  display: flex;
+  justify-content: center;
+  align-items: center;
+*/
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+display: flex;
+justify-content: center;
+align-items: center;
+  background-color: transparent;
+  background-image: linear-gradient(900deg, rgba(255, 255, 255, 0.897), rgba(175, 21, 21, 0.774));
+  border: none;
+  border-radius: 20px;
+  width: 50vh;
+  height: 50vh;
+}
+
+.inside {
+  top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center ;
+}
+
+.caixa {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  width: 410px;
+  height: 25px;
+  border-bottom: 2px solid #53172b;
+  padding-top: 30px;
+}
+
+.caixa input {
+  width: 410px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  font-size: large;
+  outline: none;
+}
+
+#titulo {font-size: 26px;}
+.caixa label {
+  position: absolute;
+  top: 80%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 2em;
+  font-weight: 5em;
+  pointer-events: none;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.caixa input:focus~label,
+.caixa input:valid~label {
+  top: -1px;
+}
+
+.btn {
+  border-radius: 3px;
+  background-color: white;
+  margin-right: 5px;
+  width: 100px;
+  height: 35px;
+  transition: .4s;
+  margin-top: 50px;
+  cursor: pointer;
+  border: none;
+}
+.olho {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 27.3vh;
+  left: 42.7vh;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--background);
+  color: white;
+
+  }
+  
+  .containerEsq {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    background-image: linear-gradient(900deg, rgba(255, 255, 255, 0.897), rgba(175, 21, 21, 0.774));
+    border: none;
+    border-radius: 20px;
+    width: 50vh;
+    height: 60vh;
+    }
+    
+
+    .inside2 {
+  top: 5%;
+  position: relative;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  }
+  
+.caixaEsq {
+
+  width: 260px;
+  height: 27px;
+  padding: 4px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.butt1 {
+  width: 100px;
+  height: 35px;
+  cursor: pointer;
+  margin-left: 2px;
+  border-radius: 3px;
+  transition: 0.1s;
+  border: none;
+}
+
+.butt1:hover {
+  background: #eb1423;
+  color: #ffffff;
+}
+
+p {
+  font-size: large;
+}
+
+
+.containerCad {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: transparent;
+  background-image: var(--background-image);
+  border-radius: 20px;
+  width: 50vh;
+  height: 80vh;
+  backdrop-filter: blur(100px);
+}
+
+.caixa2 {
+  text-align: center;
+  width: 369px;
+  margin: 4%;
+  padding: 10px;
+}
+
+.inside3 {
+  position: relative;
+  text-align: center;
+  left: auto;
+  top: 5%;
+
+}
+
+.container4 {
+  display: flex;
+  align-items: center;
+  margin: 5%;
+}
+
+.checkbox {
+  margin-right: 10px;
+  margin: 5px;
+  width: 16px;
+  height: 14px;
+}
+
+.espaco {
+  margin-top: 10px;
+}
+
+.btnconfirmar {
+  width: 100px;
+  height: 35px;
+  cursor: pointer;
+  margin-left: 2px;
+  border-radius: 3px;
+  transition: 0.1s;
+  border: none;
+}
+
+.btnconfirmar:hover {
+  background-color: #eb1423;
+  color: white;
+}
+
+.msg {
+  padding-top: 15px;
+}
+
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.olho1 {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 43.5vh;
+  left: 39vh;
+  cursor: pointer;
+}
+.olho2 {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 50.7vh;
+  left: 39vh;
+  cursor: pointer;
+}

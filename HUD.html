@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="Main.css">
+  <script src="Hud.js"></script>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>Site de Login</title>
+</head>
+
+<body>
+  <header>
+    <img class="logo"src="assets/UNIALFA.png"></a>
+  </header>
+  <div class="container">
+    <div class="inside">
+      <form action="#">
+        <img src="assets/alfa.png" class="img">
+        <h2 id="titulo">Faça Seu Login Com Sua Conta Unialfa</h2>
+        <br>
+
+        <div class="caixa">
+          <input type="text" required>
+          <label>Nome de exibição, E-mail ou Numero</label>
+        </div>
+        <br>
+        <div class="caixa">
+          <input type="password" id="esconder" required>
+          <label>Senha </label>
+        </div>
+        <input class="checkbox" type="checkbox" id="minha-imagem">
+        <img src="olhofechado.png" class="olho" id="minhaImagem" onclick=" myFunction()">
+        <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a> </p>
+        <a href="esqueci.html">Esqueci minha Senha </a> <br>
+        <input class="btn" type="button" onsubmit="alertLogin()"
+          value="Fazer Login" /><!--onmouseover="vermelho(this)" onmouseout="branco(this)"-->
+        </button>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
