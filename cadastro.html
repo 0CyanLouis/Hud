@@ -1,45 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <link rel="stylesheet" href="cadastro.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <link rel="stylesheet" href="Main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="Hud.js"></script>
 </head>
+
 <body>
-  
-    <div class="container">
-        <div class= "inside">
-         <img src="alfa.png" class = "img">
-         <h1>Cadastro</h1>
-         <input class= caixa1 type=text placeholder="Nome"> <input class= caixa1 type=text placeholder="SobreNome">
+  <header>
+    <img class="logo"src="assets/UNIALFA.png"></a>
+  </header>
 
-         <input class= caixa2 type=text placeholder="Nome de exibição">
-        
-         <input class= caixa2 type=text placeholder="Endereço de e-mail">
-        
-         <input class= caixa2 type=password placeholder="Senha">
+  <div class="containerCad  ">
+    <div class="inside3">
+      <img src="assets/alfa.png" class="img">
+      <form id="form_cadastro">
+        <h1>Cadastro</h1>
+        <input class="caixa2" type="text" placeholder="Nome Completo" required> 
 
-         <input class= caixa2 type=password placeholder="Confirmar Senha">
-         <div class="espaco">
+        <input class=caixa2 type="text" placeholder="Nome de exibição" required>
+
+        <input class=caixa2 type="email" placeholder="Endereço de e-mail" required>
+
+        <input class=caixa2 type="number" placeholder="Numero de telefone" required>
+
+        <input class=caixa2 type="password" placeholder="Senha" required id="esconder">
+        <img src="olhofechado.png" class="olho1" id="minhaImagem" onclick=" myFunction()">
+
+        <input class=caixa2 id="esconder1" type="password" placeholder="Confirmar Senha" required>
+        <img src="olhofechado.png" class="olho2" id="minhaImagem1" onclick=" myFunction1()">
+
+        <br>
+
+        <div class="espaco">
           <input type="checkbox" class="checkbox">
-         <label for="checkbox"> Desejo receber notificações de novidades em seu email</label>
-         
-          </div>
-          <p></p>
-          <input type="checkbox">Li e aceito os 
-        <a href="https://modeloinicial.com.br/conteudo/termos-de-uso-e-privacidade" target="_blank">
-          termos de uso
-          <p></p>
-        </a>
-        Já tem uma conta ? 
-        <a href="HUD.html" >
-          Faça Login
-        </a>
-      </div>
-      
-  </div>
-  
+          <label for="checkbox"> Desejo receber notificações de novidades em seu email</label>
 
+        </div>
+        <div class="msg">
+          <input type="checkbox" required>Li e aceito os
+          <a href="https://modeloinicial.com.br/conteudo/termos-de-uso-e-privacidade">
+            termos de uso
+
+          </a>
+          <br>
+          <p>Já tem uma conta ? <a href="HUD.html"> Faça Login </a></p>
+
+          <input class="btnconfirmar" type="submit" onsubmit="" value="Confirmar" />
+
+
+
+
+        </div>
+
+      </form>
 </body>
+
 </html>

@@ -1,41 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-  <link rel="stylesheet" href="esqueci.css">
-  <script src="esqueci.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <link rel="stylesheet" href="Main.css">
+  <script src="Hud.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
+  <header>
+    <img class="logo" src="assets/UNIALFA.png"></a>
+  </header>
 
-    <div class="container">
-      <div class= "inside">
-       <img src="alfa.png" class = "img">
-       <h2>Esqueceu Sua Senha ?</h3>
-        <p>Preencha com o e-mail que você usou para se cadastrar. Você receberá um e-mail com um código para redefinir sua senha.</p>
-        <div caixa>
-       <input class= caixa type=text placeholder="User, E-mail or Number">
-       <input class= caixa type=text placeholder="Codigo">
-       <button class="butt1" onclick="funcao1()" ><span>Enviar Codigo</span></button>
-      <p></a>
-      
-      <a href="HUD.html" >
-        Faça Login
-      </a>
-    </p>
-       </div>
-      </div>
-    
- 
+  <div class="containerEsq">
+    <div class="inside2">
+      <img src="assets/alfa.png" class="img">
+      <h2>Esqueceu Sua Senha ?</h3>
+        <p>Preencha com o e-mail que você usou para se cadastrar. Você receberá um e-mail com um código para redefinir
+          sua senha.</p>
+        <div caixaesq>
 
+          <form id="gerarCodigoForm">
+            <input class="caixaEsq" type=text placeholder="User, E-mail or Number" required>
+            <button class="butt1" id="buttGerarCodigo" type="submit"><span>Gerar Código</span></button>
+          </form>
+
+          <form>
+            <input class="caixaEsq" id="inputCodigo" type="text" placeholder="Código" required>
+            <button class="butt1" onclick="verificarCodigo()"> <span>Verificar</span> </button><br>
+          </form>
+
+          <button class="butt1" onsubmit="" style="margin-bottom:30px ;"><span>Redefinir</span></button><br>
+
+          <p><a href="HUD.html" style>Voltar ao login</a></p>
+          <p><a href="cadastro.html">Fazer cadastro</a></p>
+
+        </div>
+    </div>
+  </div>
 </body>
+</body>
+
 </html>
-
-
-
-<script>
-
-
-
-</Script>

@@ -1,6 +1,15 @@
-# Hud
-treino de frontend
-dividi o site em três páginas(.html,.css,.js) que integram-se para uma página de login em um site fictio (baseado na minha faculdade)  
-arquivos Hud são para a "página inicial" do login
-arquivos cadastro são para o "cadastro nesse site" 
-arquivos esqueci são para a página "esqueci minha senha" 
+Site de uma instituição de ensino
+
+Testar no html e css:
+  janelas flutuantes
+  header e footer talvez nav 
+  deixar a pagina menos estatica com imagens se movendo ou carrosel 
+  
+Criar funcionalidades de js:
+  login
+    ->verificar se o aluno esta cadastrado e efetuar o login
+  cadastro 
+    ->criar um cadastro para o aluno e guarda-lo
+  recuperar senha 
+    ->caso o aluno perca acesso ao login possa recupera-lo 
+    
